@@ -34,5 +34,5 @@ def fetch_data():
     else:
         return jsonify({"error": "Failed to connect to the database."}), 500
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(host='0.0.0.0', port=80,debug=True)
